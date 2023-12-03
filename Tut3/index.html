@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // "use strict"
+        d = 98
+        let a = 34;
+        // let a = 44;
+        const b = 10;
+        // b = 15;
+        var w = 10;
+        // Num, Obj, 
+        console.log(a);
+        document.addEventListener("click" , function click() { console.log("clicked"); alert("Hi"); })
+
+        let arr = [13,45,67];
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+        // }
+        
+        console.log(this)
+        function my(a) {
+            console.log("This is " + this); 
+        }
+
+        my(10);
+
+        let myobj = {
+            a: this,
+            myfn : function (num) {
+                console.log(this);
+            }
+        }
+        myobj.myfn()
+
+        setTimeout(() => {
+            console.log("yyy");
+        }, 3000)
+    </script>
+</head>
+<body>
+    <h1>the tuts    </h1>
+</body>
+</html>
